@@ -2,180 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Naawi-Oodena | Winnipeg's Future Community</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    header {
-      background-color: #002b45;
-      color: white;
-      padding: 20px 0;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-      background-color: #00577c;
-    }
-
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1616098652624-b6c799eda4e9?auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero-content h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-
-    .hero-content p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      background-color: #006994;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .button:hover {
-      background-color: #004d6e;
-    }
-
-    .about {
-      padding: 60px 20px;
-      background-color: white;
-    }
-
-    .about h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 2em;
-    }
-
-    .about p {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 40px auto;
-      font-size: 1.1em;
-    }
-
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .feature-card {
-      background-color: #e0f0f8;
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .feature-card h3 {
-      color: #00577c;
-      margin-bottom: 10px;
-    }
-
-    #map-embed {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #eef6f9;
-    }
-
-    #map-embed h3 {
-      margin-bottom: 20px;
-      font-size: 1.8em;
-      color: #00577c;
-    }
-
-    h1 {
-      color: black;
-    }
-
-    p {
-      color: black;
-    }
-
-
-    .responsive-iframe {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .responsive-iframe iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
-    }
-  </style>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naawi-Oodena | Home</title>
+  <link rel="stylesheet" href="style.css" />
 
 <body>
-  <!-- Header with Navigation -->
+  <!-- Header and Navigation -->
   <header>
     <div class="container">
-      <div class="logo">
-        <!-- You can add a logo here if you want -->
-      </div>
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="residential.html">Residential</a></li> 
+          <li><a href="residential.html">Residential</a></li>
           <li><a href="recreation.html">Fun</a></li>
         </ul>
       </nav>
@@ -183,46 +21,52 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero home-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1616098652624-b6c799eda4e9?auto=format&fit=crop&w=1350&q=80');">
     <div class="hero-content">
-      <h1>Building Winnipeg's Future Community</h1>
-      <p>An inclusive community at the heart of the city</p>
-      <a href="#about" class="button">Learn More</a>
+      <h1>Welcome to Naawi-Oodena</h1>
+      <p>Winnipeg’s newest inclusive and sustainable urban development</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Naawi-Oodena</h2>
-      <p>Naawi-Oodena, meaning "Centre of the Heart and Community," is transforming 64 hectares in Winnipeg into a thriving mixed-use development that celebrates Indigenous culture and creates opportunities for all.</p>
+  <!-- Main Content -->
+  <main class="container">
+    <h2>About Naawi-Oodena</h2>
 
-      <div class="features">
-        <div class="feature-card">
-          <h3>Residential</h3>
-          <p>Diverse housing options for all lifestyles</p>
-        </div>
+    <div class="section-text">
+      <h3>Heart of the Community</h3>
+      <p>Naawi-Oodena is a mixed-use neighbourhood designed for real connection and culture. It offers homes, shops, and gathering spaces — all while respecting Indigenous traditions and land.</p>
+    </div>
 
-        <div class="feature-card">
-          <h3>Commercial</h3>
-          <p>Vibrant retail and business spaces</p>
-        </div>
+    <div class="section-text">
+      <h3>Walkable and Sustainable</h3>
+      <p>The design encourages walking, biking, and using transit. Parks, markets, and public areas are just minutes apart, helping reduce pollution and support healthy lifestyles.</p>
+    </div>
 
-        <div class="feature-card">
-          <h3>Community</h3>
-          <p>Spaces that bring people together</p>
-        </div>
+    <div class="section-text">
+      <h3>Cultural Values</h3>
+      <p>The community includes space for art, storytelling, and ceremony. It reflects the history of the land and uplifts Indigenous identity through thoughtful design.</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="features">
+      <div class="feature-box">
+        <h3>Green Spaces</h3>
+        <p>Natural areas and trees create a calm and relaxing environment.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Transit Access</h3>
+        <p>Easy connections to the city with buses, paths, and bike routes.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Local Economy</h3>
+        <p>Shops and markets support small businesses and create jobs nearby.</p>
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- Map Embed Section -->
-  <section id="map-embed">
-    <h3>Visit The Site</h3>
-    <div class="responsive-iframe">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8166.969945622326!2d-97.21587347346988!3d49.85366003619336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea74eab82e68cb%3A0x4ffc4bf8a3a9cf2f!2sNaawi-Oodena%2C%20Winnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1746733810897!5m2!1sen!2sca" 
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map showing Naawi-Oodena location in Winnipeg, MB"></iframe>
-    </div>
-  </section>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Naawi-Oodena. All rights reserved.
+  </footer>
 </body>
 </html>
